@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private Cup _cupTemplate;
-    private List<Cup> _cups;
+    
 
-    private void Start()
-    {
-        _cups = new List<Cup>();
-        Vector3 spawnPoint = transform.position;
-        _cups.Add(Instantiate(_cupTemplate, spawnPoint, _cupTemplate.transform.rotation, transform));
-
-    }
-
+    //for (int i = 0; i < anims.Count; i++)
+    //{
+    //    NextPosition(anims[i].GetComponentInChildren<Cup>());
+    //    anims[i].SetBool("SetTrigger", true);
+    //    yield return new WaitForSeconds(0.5f);
+    //    anims[i].SetBool("SetTrigger", false);
+    //}
 }
